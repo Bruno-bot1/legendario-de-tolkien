@@ -1,0 +1,89 @@
+/* Reseta os estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.book {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.book img:hover {
+    transform: scale(1.05);
+}
+
+.book h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .books {
+        justify-content: space-between;
+    }
+
+    .book {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .books {
+        justify-content: flex-start;
+    }
+
+    .book {
+        width: 24%;
+    }
+}
